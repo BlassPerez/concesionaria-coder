@@ -98,6 +98,14 @@ main{
     font-size: 200%;
 }
 
+.informacion{
+    width: 50%;
+    align-content: center;
+    text-align: center;
+    font-size: 4vh;
+    padding: 2%;
+}
+
 footer{
     background-color: rgb(31, 90, 70);
 }
