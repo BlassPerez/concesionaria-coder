@@ -1,0 +1,26 @@
+@import 'variables';
+
+.container-main-vehiculos {
+    h1,p{
+        color: $color_letra_principal;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        text-shadow: 2px 5px $color_sombra_texto;
+    }
+    h1{
+        font-size: 8vh;
+        text-align: center;
+    }
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contenedor-producto{
+    background-color: $color_fondo_producto;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+}

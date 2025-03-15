@@ -1,0 +1,47 @@
+@import 'variables';
+
+@media ( max-width: 500px ){
+    .container-main-index{
+        padding: 0px;
+        margin: 0px;
+        ul{
+            justify-content: center;
+            justify-items: center;
+            width: 100%;
+        }
+        a{
+            margin: 15px;
+            padding: 6px;
+        }
+    }
+
+    .text-index-main{
+        font-weight: 200;
+        font-size: 30px;
+        margin: 5px;
+        padding: 5px;
+        text-shadow: 2px 2px $color_sombra_texto;
+    }
+    
+    .contenedor-productos{
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-formulario{
+        margin: 3%;
+        padding: 3%;
+        label{
+            font-size: 150%;
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+            height: 80%;
+            font-size: large;
+        }
+    }
+    footer{
+        font-size: small;
+    
+    }
+}

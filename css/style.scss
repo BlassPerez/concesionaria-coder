@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'vehiculos';
+@import 'index';
+@import 'formulario';
+@import 'footer';
+@import 'informacion';
+@import 'mediaquerie';
+
+body {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/fondo-concesionaria.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    height: 100vh auto;
+    text-align: center;
+}
+
+
+.text-index-main{
+    padding: 20px;
+    margin: 20px;
+    color: $color_letra_principal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 5px $color_sombra_texto;
+
+}

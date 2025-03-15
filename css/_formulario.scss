@@ -1,0 +1,23 @@
+@import 'variables';
+
+.contenedor-formulario{
+    background-color: $color_fondo_formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+    padding: 5%;
+    label{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 300%;
+    }
+
+    button{
+        width: 50%;
+        margin: 20px;
+        padding: 20px;
+        height: 100%;
+        font-size: large;
+    }
+}

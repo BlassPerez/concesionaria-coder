@@ -1,176 +1,154 @@
-
-body {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/fondo-concesionaria.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.container-main-vehiculos h1, .container-main-vehiculos p {
+  color: rgb(216, 204, 204);
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  text-shadow: 2px 5px black;
+}
+.container-main-vehiculos h1 {
+  font-size: 8vh;
+  text-align: center;
 }
 
-.container-main-index{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 3%;
-    margin: 3%;
-    align-content: center;
-    align-items: center;
-    height: auto;
-    
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.text-index-main{
-    padding: 20px;
-    margin: 20px;
-    color: rgb(216, 204, 204);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    text-shadow: 2px 5px black;
-
+.contenedor-producto {
+  background-color: rgba(35, 90, 72, 0.425);
+  padding: 20px;
+  margin: 30px;
+  text-align: center;
 }
 
-.container-main-index h1{
-    font-size: 10vh;
+.container-main-index {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3%;
+  margin: 3%;
+  align-content: center;
+  align-items: center;
+  height: auto;
+}
+.container-main-index h1 {
+  font-size: 10vh;
+}
+.container-main-index h2 {
+  font-size: 5vh;
+}
+.container-main-index p {
+  font-size: 4vh;
+}
+.container-main-index ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.container-main-index a {
+  margin: 2%;
+  padding: 2%;
+  font-size: 3vh;
+  text-decoration: none;
+  background-color: rgba(129, 84, 26, 0.918);
 }
 
-.container-main-index h2{
-    font-size: 5vh;
+.contenedor-formulario {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20%;
+  padding: 5%;
+}
+.contenedor-formulario label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 300%;
+}
+.contenedor-formulario button {
+  width: 50%;
+  margin: 20px;
+  padding: 20px;
+  height: 100%;
+  font-size: large;
 }
 
-.container-main-index p{
-    font-size: 4vh;
+footer {
+  background-color: rgb(31, 90, 70);
+  margin: 0px;
+  padding: 0px;
+  color: rgb(216, 204, 204);
 }
 
-.container-main-index ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
+.informacion {
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  font-size: 4vh;
+  padding: 2%;
 }
 
-.container-main-index a{
-    margin: 2%;
-    padding: 2%;
-    font-size: 3vh;
-    text-decoration: none;
-    background-color: rgba(129, 84, 26, 0.918);
-}
-
-.container-main-vehiculos h1,p{
-    color: rgb(216, 204, 204);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    text-shadow: 2px 5px black;
-}
-
-.container-main-vehiculos h1{
-    font-size: 8vh;
-    text-align: center;
-}
-
-.contenedor-productos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.contenedor-producto{
-    background-color: rgba(35, 90, 72, 0.425);
-    padding: 20px;
-    margin: 30px;
-    text-align: center;
-}
-
-main{
-    height: 100vh auto;
-    text-align: center;
-}
-
-.contenedor-formulario{
-    background-color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20%;
-    padding: 5%;
-
-}
-
-.contenedor-formulario label{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 300%;
-}
-
-.contenedor-formulario button{
-    width: 50%;
-    margin: 20px;
-    padding: 20px;
-    height: 100%;
-    font-size: large;
-}
-
-.informacion{
-    width: 100%;
-    align-content: center;
-    text-align: center;
-    font-size: 4vh;
-    padding: 2%;
-}
-
-footer{
-    background-color: rgb(31, 90, 70);
-    margin: 0px;
+@media (max-width: 500px) {
+  .container-main-index {
     padding: 0px;
+    margin: 0px;
+  }
+  .container-main-index ul {
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+  }
+  .container-main-index a {
+    margin: 15px;
+    padding: 6px;
+  }
+  .text-index-main {
+    font-weight: 200;
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+    text-shadow: 2px 2px black;
+  }
+  .contenedor-productos {
+    grid-template-columns: 1fr;
+  }
+  .contenedor-formulario {
+    margin: 3%;
+    padding: 3%;
+  }
+  .contenedor-formulario label {
+    font-size: 150%;
+  }
+  .contenedor-formulario button {
+    margin: 10px;
+    padding: 10px;
+    height: 80%;
+    font-size: large;
+  }
+  footer {
+    font-size: small;
+  }
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/fondo-concesionaria.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-/*----------------------------------MEDIAQUERIE -------------------------------------------*/
-
-@media ( max-width: 500px ){
-    .container-main-index{
-        padding: 0px;
-        margin: 0px;
-    }
-
-
-    .container-main-index ul{
-        justify-content: center;
-        justify-items: center;
-        width: 100%;
-    }
-
-    .container-main-index a{
-        margin: 15px;
-        padding: 6px;
-    }
-
-    .text-index-main{
-        font-weight: 200;
-        font-size: 30px;
-        margin: 5px;
-        padding: 5px;
-        text-shadow: 2px 2px black;
-    }
-    
-    .contenedor-productos{
-        grid-template-columns: 1fr;
-    }
-
-    .contenedor-formulario{
-        margin: 3%;
-        padding: 3%; 
-    }
-
-    .contenedor-formulario label{
-        font-size: 150%;
-    }
-
-    .contenedor-formulario button{
-        margin: 10px;
-        padding: 10px;
-        height: 80%;
-        font-size: large;
-    }
-
-    footer{
-        font-size: small;
-    
-    }
+main {
+  height: 100vh auto;
+  text-align: center;
 }
+
+.text-index-main {
+  padding: 20px;
+  margin: 20px;
+  color: rgb(216, 204, 204);
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  text-shadow: 2px 5px black;
+}
+
+/*# sourceMappingURL=style.css.map */
