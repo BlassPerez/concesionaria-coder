@@ -137,6 +137,9 @@ footer {
   footer {
     font-size: small;
   }
+  .boton-header:hover {
+    transform: scale(1);
+  }
 }
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/fondo-concesionaria.jpeg);
@@ -160,7 +163,7 @@ main {
 }
 
 .boton-header:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=style.css.map */
