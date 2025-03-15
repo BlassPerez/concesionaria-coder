@@ -51,6 +51,10 @@
   font-size: 3vh;
   text-decoration: none;
   background-color: rgba(129, 84, 26, 0.918);
+  transition: 1s;
+}
+.container-main-index a:hover {
+  transform: scale(1.1);
 }
 
 .contenedor-formulario {
@@ -72,6 +76,10 @@
   padding: 20px;
   height: 100%;
   font-size: large;
+  transition: 1s;
+}
+.contenedor-formulario button:hover {
+  transform: scale(1.1);
 }
 
 footer {
@@ -149,6 +157,10 @@ main {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   text-shadow: 2px 5px black;
+}
+
+.boton-header:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */

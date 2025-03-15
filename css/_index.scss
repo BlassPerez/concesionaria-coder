@@ -34,6 +34,10 @@
         font-size: 3vh;
         text-decoration: none;
         background-color: $color_fondo_botones;
+        transition: 1s;
+    }
+    a:hover{
+        transform: scale(1.1);
     }
 
 }

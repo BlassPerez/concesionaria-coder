@@ -28,3 +28,7 @@ main{
     text-shadow: 2px 5px $color_sombra_texto;
 
 }
+
+.boton-header:hover{
+    transform: scale(1.2);
+}
