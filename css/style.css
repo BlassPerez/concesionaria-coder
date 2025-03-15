@@ -1,6 +1,6 @@
 
 body {
-    background-image: url(../images/fondo-concesionaria.jpeg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/fondo-concesionaria.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -19,6 +19,8 @@ body {
 }
 
 .text-index-main{
+    padding: 20px;
+    margin: 20px;
     color: rgb(216, 204, 204);
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
@@ -71,8 +73,8 @@ body {
 
 .contenedor-producto{
     background-color: rgba(35, 90, 72, 0.425);
-    padding: 10px;
-    margin: 100px;
+    padding: 20px;
+    margin: 30px;
     text-align: center;
 }
 
@@ -85,21 +87,28 @@ main{
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 40%;
+    margin: 20%;
     padding: 5%;
-    margin: 14%;
 
 }
 
 .contenedor-formulario label{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 200%;
+    font-size: 300%;
+}
+
+.contenedor-formulario button{
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    height: 100%;
+    font-size: large;
 }
 
 .informacion{
-    width: 50%;
+    width: 100%;
     align-content: center;
     text-align: center;
     font-size: 4vh;
@@ -108,12 +117,60 @@ main{
 
 footer{
     background-color: rgb(31, 90, 70);
+    margin: 0px;
+    padding: 0px;
 }
 
 /*----------------------------------MEDIAQUERIE -------------------------------------------*/
 
 @media ( max-width: 500px ){
+    .container-main-index{
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+    .container-main-index ul{
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .container-main-index a{
+        margin: 15px;
+        padding: 6px;
+    }
+
+    .text-index-main{
+        font-weight: 200;
+        font-size: 30px;
+        margin: 5px;
+        padding: 5px;
+        text-shadow: 2px 2px black;
+    }
+    
     .contenedor-productos{
         grid-template-columns: 1fr;
+    }
+
+    .contenedor-formulario{
+        margin: 3%;
+        padding: 3%; 
+    }
+
+    .contenedor-formulario label{
+        font-size: 150%;
+    }
+
+    .contenedor-formulario button{
+        margin: 10px;
+        padding: 10px;
+        height: 80%;
+        font-size: large;
+    }
+
+    footer{
+        font-size: small;
+    
     }
 }
