@@ -60,7 +60,7 @@
 .contenedor-formulario {
   background-color: aliceblue;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   align-items: center;
   margin: 20%;
@@ -98,6 +98,9 @@ footer {
 }
 
 @media (max-width: 500px) {
+  html, body{
+    height: 100%;
+  }
   .container-main-index {
     padding: 0px;
     margin: 0px;
@@ -113,7 +116,7 @@ footer {
   }
   .text-index-main {
     font-weight: 200;
-    font-size: 30px;
+    font-size: 25px !important;
     margin: 5px;
     padding: 5px;
     text-shadow: 2px 2px black;

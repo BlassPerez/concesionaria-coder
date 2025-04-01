@@ -3,7 +3,7 @@
 .contenedor-formulario{
     background-color: $color_fondo_formulario;
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: center;
     align-items: center;
     margin: 20%;
